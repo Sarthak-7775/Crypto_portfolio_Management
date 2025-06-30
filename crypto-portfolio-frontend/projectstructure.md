@@ -1,7 +1,3 @@
-Crypto Portfolio management
-Lets begin
-
-
 # 📁 Crypto Portfolio Frontend - Complete Project Structure
 
 ## 🗂️ File Organization
@@ -169,4 +165,3 @@ Global Contexts
 - **Input Validation**: Client-side and server-side validation
 
 This structure provides a scalable, maintainable, and feature-rich foundation for a professional cryptocurrency portfolio management application.
-

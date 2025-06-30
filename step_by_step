@@ -1,0 +1,6 @@
+-creating react-app and downloading dependencies
+-.env file for variable to be creawted
+- pckg.json
+- Real-time Data: Socket.IO Client handles WebSocket connections with automatic reconnection, fallback polling, and room-based messaging 
+-Implement WebSocket connections for live price updates and market data streaming . WebSockets provide bidirectional communication enabling real-time features like live price tickers, order book updates, and instant notifications.
+-CoinGecko API Implementation
