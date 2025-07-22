@@ -8,5 +8,7 @@
 
 -- deleting node_modules and package.json from root folder and placing all thes e things inside crypto-posrtfolio-frontend
 
+
 -- run start always from crypto-portfolio-frontend
 -- package.json & node_modules present for now only in  frontend folder
+
