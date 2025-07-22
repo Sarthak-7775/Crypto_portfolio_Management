@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { useTheme } from '../../contexts/ThemeContext';
-import { useAuth } from '../../contexts/AuthContext';
-import { useWebSocket } from '../../contexts/WebSocketContext';
+import { useTheme } from '../../components/contexts/ThemeContext';
+import { useAuth } from '../../components/contexts/AuthContext';
+import { useWebSocket } from '../../components/contexts/WebSocketContext';
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();

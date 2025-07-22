@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
-import { usePortfolio } from '../../contexts/PortfolioContext';
+import { usePortfolio } from '../../components/contexts/PortfolioContext';
 
 const AssetAllocation = () => {
   const { portfolio } = usePortfolio();

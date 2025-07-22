@@ -18,10 +18,10 @@ import Sidebar from './components/layout/Sidebar';
 import Footer from './components/layout/Footer';
 
 // Import contexts
-import { ThemeProvider } from './contexts/ThemeContext';
-import { PortfolioProvider } from './contexts/PortfolioContext';
-import { AuthProvider } from './contexts/AuthContext';
-import { WebSocketProvider } from './contexts/WebSocketContext';
+import { ThemeProvider } from './components/contexts/ThemeContext';
+import { PortfolioProvider } from './components/contexts/PortfolioContext';
+import { AuthProvider } from './components/contexts/AuthContext';
+import { WebSocketProvider } from './components/contexts/WebSocketContext';
 
 function App() {
   return (
@@ -141,5 +141,17 @@ function App() {
     </AuthProvider>
   );
 }
+
+// Add to any component temporarily
+// api check
+// console.log('API Key exists:', !!process.env.REACT_APP_NEWS_API_KEY);
+// console.log('API URL:', process.env.REACT_APP_CRYPTO_NEWS_API_URL);
+
+// Test in browser console or component
+// fetch(`https://newsapi.org/v2/everything?q=bitcoin&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`)
+//   .then(response => response.json())
+//   .then(data => console.log('API Response:', data))
+//   .catch(error => console.error('API Error:', error));
+
 
 export default App;

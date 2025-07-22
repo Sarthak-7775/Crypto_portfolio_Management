@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-infinite-scroll-component": "^6.1.0",
+    "framer-motion": "^10.16.4",
+    "date-fns": "^2.30.0",
+    "@headlessui/react": "^1.7.17"
+  }
+}

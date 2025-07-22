@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { usePortfolio } from '../../contexts/PortfolioContext';
+import { usePortfolio } from '../../components/contexts/PortfolioContext';
 
 const PortfolioSummary = () => {
   const { portfolio } = usePortfolio();
