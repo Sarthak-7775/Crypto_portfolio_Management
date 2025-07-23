@@ -1,12 +1,16 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { formatDistanceToNow } from 'date-fns';
+
+
+
 import SentimentBadge from './SentimentBadge';
+
+import moment from 'moment';
 
 const ArticleModal = ({ article, isOpen, onClose }) => {
   if (!isOpen || !article) return null;
 
-  const timeAgo = formatDistanceToNow(new Date(article.publishedAt), { addSuffix: true });
+  const timeAgo = moment(article.publishedAt).fromNow();
 
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {

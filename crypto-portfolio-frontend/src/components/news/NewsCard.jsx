@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
+import moment from 'moment';
 import SentimentBadge from './SentimentBadge';
-import { formatDistanceToNow } from 'date-fns';
+
 
 const NewsCard = ({ article, onClick }) => {
   const {
@@ -15,7 +17,7 @@ const NewsCard = ({ article, onClick }) => {
     author
   } = article;
 
-  const timeAgo = formatDistanceToNow(new Date(publishedAt), { addSuffix: true });
+  const timeAgo = moment(publishedAt).fromNow();
 
   return (
     <motion.article

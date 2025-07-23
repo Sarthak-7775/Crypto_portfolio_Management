@@ -6,7 +6,7 @@
 -CoinGecko API Implementation
 
 
--- deleting node_modules and package.json from root folder and placing all thes e things inside crypto-posrtfolio-frontend
+-- deleting node_modules and package.json from root folder and placing all these things inside crypto-posrtfolio-frontend
 
 
 -- run start always from crypto-portfolio-frontend

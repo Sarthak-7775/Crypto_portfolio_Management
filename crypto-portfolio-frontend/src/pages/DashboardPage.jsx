@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { usePortfolio } from '../contexts/PortfolioContext';
-import { useWebSocket } from '../contexts/WebSocketContext';
+import { usePortfolio } from '../components/contexts/PortfolioContext';
+import { useWebSocket } from '../components/contexts/WebSocketContext';
 import PortfolioSummary from '../components/dashboard/PortfolioSummary';
 import AssetAllocation from '../components/dashboard/AssetAllocation';
 import PriceChart from '../components/dashboard/PriceChart';
