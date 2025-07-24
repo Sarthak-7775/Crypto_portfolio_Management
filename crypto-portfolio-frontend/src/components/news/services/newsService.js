@@ -18,7 +18,7 @@ class NewsService {
       sentiment = 'all',
       sources = [],
       page = 1,
-      pageSize = 20,
+      pageSize = 2,
       signal
     } = params;
 
@@ -96,6 +96,8 @@ class NewsService {
       params.append('domains', sources.map(s => this.getSourceDomain(s)).join(','));
     }
 
+    // Add a small delay to avoid hitting NewsAPI rate limits (1 req/sec for free tier)
+    await new Promise(resolve => setTimeout(resolve, 1200));
     const response = await fetch(`${API_ENDPOINTS.NEWSAPI}?${params}`, { signal });
 
     if (!response.ok) {
