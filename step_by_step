@@ -12,3 +12,20 @@
 -- run start always from crypto-portfolio-frontend
 -- package.json & node_modules present for now only in  frontend folder
 
+-- dashboard --price chart sjhow real bitcoin , etc rates
+
+-- see what these context does
+
+
+-- news api , fetching etc done .fetch used
+-- news just loading not working
+-- checked api ref, key, reduced request per sec
+stil not working
+--additional dependenciees also onstalled
+- try using other thign instead of NewsApi
+-- check why
+
+
+--build portfolio and settings basic frontend
+
+--- Analytics ---
