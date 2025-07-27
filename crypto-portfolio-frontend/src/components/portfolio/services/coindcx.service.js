@@ -1,5 +1,5 @@
 import axios from "axios";
-import crypto from "crypto-js";
+import CryptoES from "crypto-es";
 
 const KEY = import.meta.env.VITE_COINDCX_KEY;
 const SECRET = import.meta.env.VITE_COINDCX_SECRET;
@@ -8,7 +8,7 @@ const api = axios.create({ baseURL: "https://api.coindcx.com" });
 function hdr(body) {
   return {
     "X-AUTH-APIKEY": KEY,
-    "X-AUTH-SIGNATURE": crypto.HmacSHA256(
+    "X-AUTH-SIGNATURE": CryptoES.HmacSHA256(
       JSON.stringify(body),
       SECRET
     ).toString(),

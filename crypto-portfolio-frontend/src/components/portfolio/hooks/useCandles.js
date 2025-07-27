@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchCandles } from "../services";
+import { fetchCandles } from "../services/binance.service";
 
 export function useCandles(symbol) {
   const [candles, setCandles] = useState([]);

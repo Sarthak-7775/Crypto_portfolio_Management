@@ -1,4 +1,4 @@
-import { useBalances } from "./hooks/useBalances";
+import { useBalances } from "./hooks/useBalance";
 import CoinRow from "./CoinRow";
 
 export default function HoldingsTable() {

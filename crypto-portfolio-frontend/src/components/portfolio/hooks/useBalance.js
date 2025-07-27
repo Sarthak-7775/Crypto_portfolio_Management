@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { usePortfolioStore } from "./usePortfolio";
-import { getBinanceBalances, getCoinDCXBalances } from "../services";
+import { getBinanceBalances } from "../services/binance.service";
+import { getCoinDCXBalances } from "../services/coindcx.service";
 
 export function useBalances() {
   const exchange = usePortfolioStore((s) => s.exchange);

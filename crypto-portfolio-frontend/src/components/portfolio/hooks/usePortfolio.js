@@ -1,6 +1,7 @@
 import { create } from "zustand";
-import { placeBinanceOrder, placeCoinDCXOrder } from "../services";
-import useBalances from "./useBalances";
+import { getBinanceBalances, placeBinanceOrder } from "../services/binance.service";
+import { placeCoinDCXOrder } from "../services/coindcx.service";
+import { useBalances } from "./useBalance";
 import usePrices from "./usePrices";
 
 export const usePortfolioStore = create((set, get) => ({
