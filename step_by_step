@@ -27,5 +27,8 @@ stil not working
 
 
 --build portfolio and settings basic frontend
+- There is only problem in binance and coindcx api fetching , check thir js files whenever finalising portfolio
+--api for both the apps created successfully and addded in .env file
+
 
 --- Analytics ---
