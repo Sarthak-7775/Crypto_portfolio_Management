@@ -22,6 +22,7 @@ import { ThemeProvider } from './components/contexts/ThemeContext';
 import { PortfolioProvider } from './components/contexts/PortfolioContext';
 import { AuthProvider } from './components/contexts/AuthContext';
 import { WebSocketProvider } from './components/contexts/WebSocketContext';
+import { SettingsProvider } from './components/settings/context/SettingsContext';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
       <ThemeProvider>
         <WebSocketProvider>
           <PortfolioProvider>
-            <Router>
+            <SettingsProvider>
+              <Router>
               <div className="App min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
                 <Header />
                 <div className="flex">
@@ -133,8 +135,9 @@ function App() {
                   </main>
                 </div>
                 <Footer />
-              </div>
-            </Router>
+                              </div>
+              </Router>
+            </SettingsProvider>
           </PortfolioProvider>
         </WebSocketProvider>
       </ThemeProvider>

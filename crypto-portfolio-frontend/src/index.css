@@ -1,6 +1,21 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add component classes */
+@layer components {
+  .input {
+    @apply px-3 py-2 border rounded bg-white dark:bg-gray-800 w-full;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded hover:bg-gray-300 dark:hover:bg-gray-600;
+  }
+}
 
 body {
   margin: 0;
@@ -15,3 +30,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
