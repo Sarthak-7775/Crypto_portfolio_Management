@@ -32,3 +32,13 @@ stil not working
 
 
 --- Analytics ---
+
+
+
+---- Backend ----
+-some files are missing in the backend part but installing dependencies
+
+- Scripts/Activate everytime do befoer use the backend part
+
+- replace actual secret keys and api keys in the .env file in backend
+
